@@ -1,0 +1,143 @@
+ *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+    }
+    body{
+      background:#f3f3f3;
+      font-family:-apple-system,BlinkMacSystemFont,"Helvetica Neue",Arial,sans-serif;
+      color:#000;
+    }
+
+    .page{
+      width:100%;
+      padding:32px 64px 80px;
+      position:relative;
+    }
+
+
+    .nav{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      font-size:19px;
+      margin-bottom:40px;
+    }
+    .nav-left{
+      font-weight:600;
+      letter-spacing:.02em;
+    }
+    .nav-left sup{
+      font-size:10px;
+    }
+    .nav-center{
+      display:flex;
+      gap:40px;
+      font-weight:500;
+    }
+    .nav-center a,
+    .nav-right a{
+      text-decoration:none;
+      color:#000;
+    }
+    .nav-right a{
+      border-bottom:2px solid #000;
+      padding-bottom:3px;
+    }
+
+
+    .hero{
+      position:relative;
+      margin-top:10px;
+    }
+    .hero-grid{
+      display:grid;
+      grid-template-columns:360px 1fr;
+      column-gap:70px;
+      align-items:flex-start;
+    }
+
+    .asterisk{
+      font-size:150px;
+      line-height:0.8;
+      margin-bottom:20px;
+    }
+    .hero-text{
+      font-size:18px;
+      line-height:1.6;
+      margin-bottom:70px;
+    }
+    .hero-text sup{
+      font-size:10px;
+    }
+
+    .arrow{
+      font-size:140px;
+      line-height:0.7;
+      margin-bottom:35px;
+    }
+    .engagement-link{
+      font-size:21px;
+      margin-top:10px;
+    }
+    .engagement-link span{
+      border-bottom:2px solid #000;
+      padding-bottom:4px;
+    }
+
+    .hero-heading{
+      text-transform:uppercase;
+      text-align: start;
+      font-style: normal;
+      font-weight: 500;
+      font-weight:700;
+      letter-spacing:.03em;
+      line-height:0.9;
+      margin-top:20px;
+    }
+    .hero-heading span{
+      display:block;
+      font-size:115px;
+    }
+    .hero-heading .around{
+      margin-top:30px;
+    }
+    .hero-heading sup{
+      font-size:30px;
+      vertical-align:super;
+    }
+
+
+    .scroll{
+      position:absolute;
+      right:64px;
+      bottom:12px;
+      font-size:18px;
+    }
+
+    
+    .hero-image{
+      margin-top:60px;
+      width:60%;
+      height:260px;
+      background:linear-gradient(90deg,#1b252a,#093b47,#0a5f66);
+      margin-left:auto;
+      margin-right:auto;
+    }
+
+  
+    @media(max-width:960px){
+      .page{padding:24px;}
+      .nav-center{display:none;}
+      .hero-grid{
+        grid-template-columns:1fr;
+      }
+      .hero-heading span{
+        font-size:15vw;
+      }
+      .scroll{
+        position:static;
+        text-align:right;
+        margin-top:20px;
+      }
+    }
